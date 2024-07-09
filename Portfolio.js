@@ -27,6 +27,21 @@ modalCloseBtns.forEach((modalCloseBtn) =>{
     });
 });
 
+//CV Download
+const CVBtn = document.querySelector(".CV-btn");
+const CVModals = document.querySelector(".CV-model");
+const CVCloseBtns = document.querySelector(".CV-close-btn");
+
+CVBtn.addEventListener("click", ()=>{
+    CVModals.classList.add("active");
+});
+
+CVCloseBtns.addEventListener("click", () =>{
+        
+            CVModals.classList.remove("active");
+       
+});
+
 
 // Portfolio Section - Modal
 const portfolioModals = document.querySelectorAll(".portfolio-model");
@@ -202,7 +217,7 @@ function submitForm() {
     formData.append('message', document.getElementById('message').value);
 
     // Submit form data to Formspree
-    fetch('https://formspree.io/f/xvoejwod', {
+    fetch('https://formspree.io/f/mgvwebqk', {
         method: 'POST',
         body: formData,
         headers: {
@@ -226,3 +241,37 @@ function submitForm() {
 function closeForm(){
     contactModel.classList.remove("active");
 }
+
+
+//free Lancer swiper
+var slides;
+
+function showDivs(slideIndex) {
+    // slides is already declared globally, so no need to redeclare it here
+    // var slides = document.querySelectorAll('.flipping-slide');
+    
+    // Check if slides exist and slideIndex is within range
+    if (slides.length > 0 && slideIndex >= 0 && slideIndex < slides.length) {
+        // Hide all slides
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        
+        // Show the specific slideIndex
+        slides[slideIndex].style.display = 'block';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize slides here once the DOM content is loaded
+    slides = document.querySelectorAll('.flipping-slide');
+    
+    var tapText = document.querySelector('.tap-text');
+    var currentSlide = 0;
+
+    tapText.addEventListener('click', function () {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showDivs(currentSlide);
+    });
+});
+
