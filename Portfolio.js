@@ -168,23 +168,23 @@ navItems.forEach((navItem) =>{
 //Commo Reaveal Options to Create Reveal Aniations
 ScrollReveal({ 
     reset: true,
-    distance: '60px',
-    duration: 2500,
-    delay: 100
+    distance: '55px',
+    duration: 1000,
+    delay: 50
 });
 
 //Target Elements, and Specify Options to Create Reveal Animation
-ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 300, origin: 'left'} );
-ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 400, origin: 'right'} );
-ScrollReveal().reveal('.home .info .btn', { delay: 500, origin: 'bottom'} );
-ScrollReveal().reveal('.media-icon i, .contact-left li', { delay: 300, origin: 'left', interval: 100} );
-ScrollReveal().reveal('.home-img, .about-img', { delay: 300, origin: 'bottom'} );
-ScrollReveal().reveal('.about .description, .contact-right', { delay: 400, origin: 'right'} );
-ScrollReveal().reveal('.about .professional-list li', { delay: 300, origin: 'right', interval: 100} );
-ScrollReveal().reveal('.services-description, .skills-description, .contact-card, .client-Swiper, .contact-left h2', { delay: 500, origin: 'left'} );
-ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 500, origin: 'bottom', interval: 100} );
+ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 100, origin: 'left'} );
+ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 200, origin: 'right'} );
+ScrollReveal().reveal('.home .info .btn', { delay: 300, origin: 'bottom'} );
+ScrollReveal().reveal('.media-icon i, .contact-left li', { delay: 100, origin: 'left', interval: 100} );
+ScrollReveal().reveal('.home-img, .about-img', { delay: 100, origin: 'bottom'} );
+ScrollReveal().reveal('.about .description, .contact-right', { delay: 200, origin: 'right'} );
+ScrollReveal().reveal('.about .professional-list li', { delay: 100, origin: 'right', interval: 50} );
+ScrollReveal().reveal('.services-description, .skills-description, .contact-card, .client-Swiper, .contact-left h2', { delay: 300, origin: 'left'} );
+ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 300, origin: 'bottom', interval: 50} );
 
-ScrollReveal().reveal('.footer-container .group', { delay: 300, origin: 'top', interval: 100} );
+ScrollReveal().reveal('.footer-container .group', { delay: 100, origin: 'top', interval: 50} );
 
     
 
