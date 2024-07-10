@@ -58,6 +58,7 @@ imgCards.forEach((imgCard, i) =>{
     });
 });
 
+
 portfolioCloseBtns.forEach((portfolioCloseBtn) =>{
     portfolioCloseBtn.addEventListener("click", () =>{
         portfolioModals.forEach((portfolioModalView) => {
@@ -174,7 +175,7 @@ ScrollReveal({
 });
 
 //Target Elements, and Specify Options to Create Reveal Animation
-ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 100, origin: 'left'} );
+// ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 100, origin: 'left'} );
 ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 200, origin: 'right'} );
 ScrollReveal().reveal('.home .info .btn', { delay: 300, origin: 'bottom'} );
 ScrollReveal().reveal('.media-icon i, .contact-left li', { delay: 100, origin: 'left', interval: 100} );

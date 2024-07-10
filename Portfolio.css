@@ -1055,6 +1055,7 @@ header .sticky .nav-bar{
 
 /*==== Free Lancer ====*/
 .portfolio .container .content{
+    display: flex;
     width: 100%;
 }
 
@@ -1145,10 +1146,10 @@ header .sticky .nav-bar{
     transform: translateX(-50%);
     background: var(--second-color);
     color: white;
-    padding: 10px 20px;
+    padding: 15px 22px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -1618,11 +1619,19 @@ footer a{
     }
 
     /*=== Home Section ===*/
+    .home{
+        min-height: 83vh;
+        padding: 4rem 2rem 0rem 2rem;
+    }
+
     .home .home-container .info{
         font-size: 0.85rem;
     }
 
     /*=== About Section ===*/
+    .section {
+        padding: 0rem 2rem 2rem;
+    }
     .about .container .content{
         display: grid;
         width: 100%;
@@ -1724,8 +1733,10 @@ footer a{
 
     /*=== free lance ===*/
     .freeLancer-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         max-width: 85%;
         gap: 9px;
     }
@@ -1821,8 +1832,31 @@ footer a{
         margin: 1rem 0 ;
     }
 
+    header{
+        width: 100%;
+    }
+
+    .client-Swiper .swiper-slide {
+        flex-direction: inherit;
+    }
+    .section {
+        width: 285%;
+        padding: 4rem 2rem 0rem;
+    }
+
     .section-title-01{
         font-size: 3em;
+        font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+    }
+
+    .section-title-01-change{
+        margin-left: 215px;
+
     }
 
     .section-title-02{
@@ -1853,7 +1887,9 @@ footer a{
     .media-icon{
         margin-bottom: 80px;
     }
-
+    .about{
+        margin-top: -70px;
+    }
     /*=== Get-in touch ===*/
     .get-in-touch .contact-card{
         display: grid;
@@ -1890,6 +1926,12 @@ footer a{
         max-width: 360px;
     }
 
+    .portfolio .container .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .portfolio-model{
         margin-top: 50px;
     }
@@ -1902,8 +1944,58 @@ footer a{
         max-width: 360px;
     }
 
+    .portfolio-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(485px, 1fr));
+        max-width: 45%;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    .portfolio-list .img-card{
+        
+        cursor: pointer;
+    }
+
+    .description p{
+        margin-left: 20px;
+    }
+
+    
+    /* free Lancer */
+    
+
+    .freeLancer-container p{
+        margin-left: 50px;
+    }
+
+    .freeLancer-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 85%;
+        gap: 9px;
+    }
+
+    .tap-text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--second-color);
+        color: white;
+        padding: 20px 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+    }
+
+
     footer{
-        width: 120%;
+        width: 267%;
+        padding: 5rem 2rem;
     }
 }
     
